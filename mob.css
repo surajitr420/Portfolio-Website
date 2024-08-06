@@ -1,0 +1,40 @@
+@media only screen and (max-width:810px) {
+    #title img{
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+        
+        
+    }
+    
+    #skills{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        
+    }
+}
+
+@media only screen and (max-width:500px){
+    .video-background {
+        
+        width: 130%;
+    }
+    #skill-set{
+        width: 135%;
+    }
+    #education{
+        width: 135%;
+    }
+    tr{
+        font-size: 1.5rem;
+    }
+    td{
+        font-size: 1rem;
+    }
+    
+    
+}
+
