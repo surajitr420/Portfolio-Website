@@ -1,0 +1,219 @@
+*{
+    color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    /* position: absolute; */
+}
+
+
+
+#navbar{
+    /* border: 2px solid red; */
+    /* height: 50px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 5px;
+    z-index: 3;
+    
+}
+#navbar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+.items ul {
+    display: flex;
+    gap: 10px;
+    
+}
+.items ul li {
+    height: 30px;
+    width: 100px;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* background-color: white; */
+    /* color: black; */
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+    
+}
+.items ul a:hover {
+    /* cursor: pointer; */
+    text-decoration: underline;
+
+
+}
+
+
+
+
+#title{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    position: relative;
+    margin-top: 20px;
+
+    
+}
+#title :nth-child(3){
+    font-size: 2rem;
+    color: ghostwhite;
+    opacity: 50%;
+    
+}
+#explore{
+    background-color: white;
+    color: black;
+    font-size: 3rem;
+    width: 200px;
+    height: 81px;
+    align-self: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    
+}
+#explore:hover{
+    background-color: rgb(179, 177, 177);
+    color: white;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    filter: blur(20px);
+
+}
+
+#title img{
+    height: 300px;
+    width: 300px;
+    
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#skills{
+    margin: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    background: linear-gradient(0deg, rgb(7 1 20), rgb(4 116 215), black);
+}
+.box{
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #f449a2, rgb(90, 143, 234), #e92ec7);
+    font-size: 1.5rem;
+    align-items: center;
+    
+}
+.box img{
+    height:263px ;
+    width: 263px;
+
+
+    
+
+}
+
+#education{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(7 1 20), rgb(4 116 215), black);
+    /* background-color: red; */
+
+    /* background-color: red; */
+
+}
+#education div{
+    position: relative;
+    margin: 50px;
+    
+}
+#education table{
+    border-radius: 20px 0 20px;
+    background: linear-gradient(-45deg, #f449a2, rgb(90, 143, 234), #e92ec7);
+    animation: gradient 10s ease infinite;
+    
+}
+
+
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#education thead{
+    font-size: 2.5rem;
+}
+
+#education tbody{
+    font-size: 1.2rem;
+}
+th,td{
+    padding: 20px;
+    
+}
+th{
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------- */
+
+.bold{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.heading{
+    font-size: 2.5rem;
+}
+.flex{
+    display: flex;
+
+}
